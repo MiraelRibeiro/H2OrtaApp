@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "257851876791",
+    "project_id": "h2orta-33e99",
+    "storage_bucket": "h2orta-33e99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257851876791:android:3db38b2ac0665418557432",
+        "android_client_info": {
+          "package_name": "com.pi.h2orta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257851876791-iq70sp0ak98ativjg34mnjhka19m7ld7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv6I4-mCex49EJsHoCITTZT6ox5FUXHko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257851876791-iq70sp0ak98ativjg34mnjhka19m7ld7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

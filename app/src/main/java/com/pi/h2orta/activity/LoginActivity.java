@@ -31,6 +31,10 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
 
+    public void fazerCadastro(View view){
+        startActivity(new Intent(getApplicationContext(), CadastroActivity.class));
+    }
+
     public void inicializarComponentes(){
         campoEmail = findViewById(R.id.editTextEmailLogin);
         campoSenha = findViewById(R.id.editTextSenhaLogin);
