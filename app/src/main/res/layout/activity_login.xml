@@ -70,6 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:onClick="fazerLogin"
             android:text="Login"
             android:textSize="24sp" />
 
@@ -94,9 +95,10 @@
                 android:id="@+id/textViewCadastrar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="fazerCadastro"
                 android:text="Cadastrar"
                 android:textColor="@color/background1"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
