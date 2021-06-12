@@ -26,8 +26,8 @@ public class AdapterEstufas extends RecyclerView.Adapter<AdapterEstufas.MyViewHo
     public AdapterEstufas() {
     }
 
-    public AdapterEstufas(List<Estufa> listaServicos, Context context) {
-        this.listaEstufas = listaServicos;
+    public AdapterEstufas(List<Estufa> listaEstufas, Context context) {
+        this.listaEstufas = listaEstufas;
         this.context = context;
     }
 

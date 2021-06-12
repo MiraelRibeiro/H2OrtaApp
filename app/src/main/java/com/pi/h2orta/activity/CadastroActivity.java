@@ -146,7 +146,7 @@ public class CadastroActivity extends AppCompatActivity {
         }
     }
 
-    public void cadastrar(){
+    private void cadastrar(){
         autenticacao.createUserWithEmailAndPassword(
                 usuario.getEmail(), usuario.getSenha()
         ).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -188,7 +188,7 @@ public class CadastroActivity extends AppCompatActivity {
         finish();
     }
 
-    public void inicializarComponentes(){
+    private void inicializarComponentes(){
         campoNome = findViewById(R.id.editTextNome);
         campoSobrenome = findViewById(R.id.editTextSobrenome);
         campoUser = findViewById(R.id.editTextUser);

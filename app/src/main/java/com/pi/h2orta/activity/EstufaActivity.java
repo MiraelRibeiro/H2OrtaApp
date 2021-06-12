@@ -39,7 +39,7 @@ public class EstufaActivity extends AppCompatActivity {
         preencheLista();
 
         try {
-            AdapterEscolha adapterEscolha = new AdapterEscolha(listaTamanhos, getApplicationContext());
+            AdapterEscolha adapterEscolha = new AdapterEscolha(listaTamanhos, getApplicationContext(), textModelo, imagem);
             RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
             recyclerView.setLayoutManager(layoutManager);
             recyclerView.setHasFixedSize(true);
@@ -51,7 +51,7 @@ public class EstufaActivity extends AppCompatActivity {
 
     }
 
-    public void preencheLista() {
+    private void preencheLista() {
         listaTamanhos.clear();
         if(textModelo.getText().toString().equals("Semi-Aberta"))
         {
@@ -100,7 +100,7 @@ public class EstufaActivity extends AppCompatActivity {
         }
 
     }
-    public void iniciarComponentes(){
+    private void iniciarComponentes(){
         textModelo = findViewById(R.id.textModeloEstuda);
         imagem = findViewById(R.id.imagemDaEstufa);
         recyclerView = findViewById(R.id.recyclerValores);
