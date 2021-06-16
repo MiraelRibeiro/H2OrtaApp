@@ -16,7 +16,7 @@
         android:id="@+id/textModelo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Modelo"
+        android:text="@string/txt_modelo_adapter"
         android:textAlignment="center"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -25,7 +25,7 @@
         android:id="@+id/textDescricao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Descrição da estufa"
+        android:text="@string/txt_descriao_estufa"
         android:textAlignment="center"
         android:textSize="14sp" />
 </LinearLayout>

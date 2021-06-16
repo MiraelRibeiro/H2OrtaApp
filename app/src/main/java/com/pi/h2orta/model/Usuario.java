@@ -2,6 +2,10 @@ package com.pi.h2orta.model;
 
 import android.renderscript.ScriptIntrinsicYuvToRGB;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.Exclude;
+import com.pi.h2orta.config.ConfiguracaoFirebase;
+
 public class Usuario {
     private String id;
     private String nome;
@@ -18,8 +22,11 @@ public class Usuario {
     private String pais;
 
 
-    public void salvarDados() {
+    public void salvarUsuario() {
+        DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebaseDataBase();
+        DatabaseReference usuario = firebaseRef.child("usuarios").child(getId());
 
+        usuario.setValue(this);
     }
 
     public String getId() {
@@ -69,7 +76,7 @@ public class Usuario {
     public void setEmail(String email) {
         this.email = email;
     }
-
+    @Exclude
     public String getSenha() {
         return senha;
     }
@@ -81,7 +88,7 @@ public class Usuario {
     public String getConfSenha() {
         return confSenha;
     }
-
+    @Exclude
     public void setConfSenha(String confSenha) {
         this.confSenha = confSenha;
     }

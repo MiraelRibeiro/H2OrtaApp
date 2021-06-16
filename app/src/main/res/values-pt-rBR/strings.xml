@@ -1,9 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">H2Orta</string>
-    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
-    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
     <string name="nav_header_title">H2Orta Hidroponia</string>
-    <string name="nav_header_subtitle" translatable="false">h2orta@hidroponia.com</string>
     <string name="nav_header_desc">Navigation header</string>
 
     <string name="menu_home">Home</string>
@@ -19,10 +16,8 @@
     <string name="txt_nome">Nome</string>
     <string name="txt_sobrenome">Sobrenome</string>
     <string name="txt_user">User</string>
-    <string name="txt_cpf" translatable="false">CPF</string>
     <string name="txt_senha">Senha</string>
     <string name="txt_confirmar_senha">Confirmar Senha</string>
-    <string name="txt_email" translatable="false">E-mail</string>
     <string name="txt_endereco">Endereço</string>
     <string name="txt_cidade">Cidade</string>
     <string name="txt_cep">CEP</string>
@@ -31,7 +26,6 @@
     <string name="txt_btn_cadastrar">Cadastrar</string>
     <string name="txt_modelo_estufa">Modelo da Estufa</string>
     <string name="txt_login">Login</string>
-    <string name="txt_email_login" translatable="false">E-mail</string>
     <string name="txt_senha_login">Senha</string>
     <string name="txt_lembreme">Lembre - me</string>
     <string name="txt_btn_login">Login</string>
@@ -44,7 +38,6 @@
     <string name="txt_modelo">Modelo</string>
     <string name="txt_dado_pagamento">Dados de Pagamento</string>
     <string name="txt_rb_boleto">Boleto</string>
-    <string name="txt_rb_pix" translatable="false">Pix</string>
     <string name="txt_rb_cartao_credito">Cartão Credito</string>
     <string name="txt_rb_cartao_debito">Cartão Débito</string>
     <string name="txt_adicionar_cartao">Adicionar Cartão</string>
@@ -62,5 +55,5 @@
     <string name="action_settings">Sair</string>
     <string name="txt_insira_dados_cartao">Insira os dados do cartão</string>
     <string name="txt_btn_clique_comprar">Clique para Comprar</string>
-    <string name="txt_en">EN</string>
+    <string name="txt_en">BR</string>
 </resources>

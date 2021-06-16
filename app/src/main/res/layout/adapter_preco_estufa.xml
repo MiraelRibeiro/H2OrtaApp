@@ -27,7 +27,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="5dp"
-            android:text="Tamanho"
+            android:text="@string/txt_tamanho_estufa"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="16sp" />
@@ -52,7 +52,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="20dp"
-            android:text="Informações"
+            android:text="@string/txt_informacoes"
             android:textAlignment="center"
             android:textColor="@color/white" />
 
@@ -63,7 +63,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="10dp"
-            android:text="Clique para Comprar" />
+            android:text="@string/txt_btn_clique_comprar" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

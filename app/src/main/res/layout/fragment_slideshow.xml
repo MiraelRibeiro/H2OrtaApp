@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:text="Telefone"
+                android:text="@string/txt_telefone"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="18sp"

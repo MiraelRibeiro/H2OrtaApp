@@ -70,7 +70,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="70dp"
-        android:text="Escolha um Idioma"
+        android:text="@string/txt_escolha_idioma"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="30sp"

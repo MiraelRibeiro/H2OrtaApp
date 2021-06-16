@@ -25,12 +25,12 @@ import com.pi.h2orta.MainActivity;
 import com.pi.h2orta.R;
 import com.pi.h2orta.model.Usuario;
 
+import org.jetbrains.annotations.NotNull;
+
 public class CadastroActivity extends AppCompatActivity {
 
     private EditText campoNome, campoSobrenome, campoUser, campoCpf, campoSenha, campoConfSenha;
-    private EditText campoEmail, campoEndereco, campoCidade, campoCep;
-    private Spinner spinnerEstado, spinnerPais;
-    private Button btnCadastrar;
+    private EditText campoEmail, campoEndereco, campoCidade, campoCep, campoEstado, campoPais;
 
     private FirebaseAuth autenticacao = FirebaseAuth.getInstance();
     private DatabaseReference referencia = FirebaseDatabase.getInstance().getReference();
@@ -55,8 +55,8 @@ public class CadastroActivity extends AppCompatActivity {
         String textoEndereco = campoEndereco.getText().toString();
         String textoCidade = campoCidade.getText().toString();
         String textoCep = campoCep.getText().toString();
-        String textoEstado = spinnerEstado.getTransitionName().toString();
-        String textoPais = spinnerPais.getTransitionName().toString();
+        String textoEstado = campoEstado.getText().toString();
+        String textoPais = campoPais.getText().toString();
 
         if (!textoNome.isEmpty() || textoNome.length() >=3){
 
@@ -68,7 +68,7 @@ public class CadastroActivity extends AppCompatActivity {
 
                         if (!textoSenha.isEmpty() || textoSenha.length() >=6){
 
-                            if (!textoConfSenha.isEmpty() && textoConfSenha == textoSenha){
+                            if (!textoConfSenha.isEmpty() && textoConfSenha.equals(textoSenha)){
 
                                 if (!textoEmail.isEmpty() || textoEmail.length() >=3){
 
@@ -147,44 +147,40 @@ public class CadastroActivity extends AppCompatActivity {
     }
 
     private void cadastrar(){
-        autenticacao.createUserWithEmailAndPassword(
-                usuario.getEmail(), usuario.getSenha()
-        ).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+        autenticacao.createUserWithEmailAndPassword(usuario.getEmail(), usuario.getSenha()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-
-                if (task.isSuccessful()){
+            public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
+                if (task.isSuccessful()) {
                     try {
-                        FirebaseUser user =autenticacao.getCurrentUser();
+                        FirebaseUser user = autenticacao.getCurrentUser();
                         usuario.setId(user.getUid());
-                        usuario.salvarDados();
-                    }catch (Exception e){
+                        usuario.salvarUsuario();
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
 
-                    Toast.makeText(CadastroActivity.this, "Sucesso ao cadastrar usuário!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(CadastroActivity.this, "Sucesso!", Toast.LENGTH_LONG).show();
                     finish();
-                }
-                else {
+                } else {
                     String excessao = "";
                     try {
                         throw task.getException();
-                    }catch (FirebaseAuthWeakPasswordException e){
+                    } catch (FirebaseAuthWeakPasswordException e) {
                         excessao = "Digite uma senha mais forte!";
-                    }catch (FirebaseAuthInvalidCredentialsException e){
+                    } catch (FirebaseAuthInvalidCredentialsException e) {
                         excessao = "Digite um email válido!";
-                    }catch (FirebaseAuthUserCollisionException e){
+                    } catch (FirebaseAuthUserCollisionException e) {
                         excessao = "Esta conta ja foi cadastrada!";
-                    }catch (Exception e){
+                    } catch (Exception e) {
                         excessao = "Erro ao encontrar usuário: " + e.getMessage();
                         e.printStackTrace();
                     }
 
                     Toast.makeText(CadastroActivity.this, excessao, Toast.LENGTH_LONG).show();
+
                 }
             }
         });
-        Toast.makeText(this, "Cadastro criado com sucesso!", Toast.LENGTH_SHORT).show();
         finish();
     }
 
@@ -199,9 +195,8 @@ public class CadastroActivity extends AppCompatActivity {
         campoEndereco = findViewById(R.id.editTextEndereco);
         campoCidade = findViewById(R.id.editTextCidade);
         campoCep = findViewById(R.id.editTextCEP);
-        spinnerEstado = findViewById(R.id.spinnerEstado);
-        spinnerPais = findViewById(R.id.spinnerPais);
-        btnCadastrar = findViewById(R.id.btnCadastrar);
+        campoEstado = findViewById(R.id.editTextEstado);
+        campoPais = findViewById(R.id.editTextPais);
 
     }
 }

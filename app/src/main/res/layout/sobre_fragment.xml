@@ -30,7 +30,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:padding="10dp"
-                android:text="Sobre a Empresa"
+                android:text="@string/txt_sobre_empresa"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:text="A H2Orta é uma empresa que busca a facilidade de cultivo utilizando o sistema hidropônico para residências, com uma menor escala porém maior praticidade e qualidade no cultivo. O sistema de estufa e cultivo hidropônico se baseia na utilização de água com nutrientes e sais minerais necessários para cultivo de plantas (de acordo com a vontade do usuário)."
+                android:text="@string/txt_dados_empresa"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
@@ -53,7 +53,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:padding="10dp"
-                android:text="Por que Hidropônia?"
+                android:text="@string/txt_porque_hidroponia"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:text="A utilização desse sistema garante uma melhor produção, um alto controle de qualidade a baixa ou nula possibilidade de pragas que danificam as raízes, folhas ou frutos. Alguns tipos de hortaliças, frutos ou plantas seriam alface, rúcula, almeirão, morangos, tomates, menta, hortelã etc. O processo facilita na manutenção pois reduz o trabalho braçal e gasto de água, ajuda no caso de pouco espaço."
+                android:text="@string/txt_sobre_hidroponia"
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
                 android:textSize="20sp" />

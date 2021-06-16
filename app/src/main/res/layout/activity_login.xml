@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="50dp"
-            android:text="Login"
+            android:text="@string/txt_login"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="30sp"
@@ -40,7 +40,7 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/backgorund_inserir"
             android:ems="10"
-            android:hint="E-mail"
+            android:hint="@string/txt_email_login"
             android:inputType="textEmailAddress"
             android:padding="10dp" />
 
@@ -51,7 +51,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/backgorund_inserir"
             android:ems="10"
-            android:hint="Senha"
+            android:hint="@string/txt_senha_login"
             android:inputType="textPassword"
             android:padding="10dp" />
 
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Lembre - me"
+            android:text="@string/txt_lembreme"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -70,8 +70,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:onClick="fazerLogin"
-            android:text="Login"
+            android:onClick="validarAutenticacaoUsuario"
+            android:text="@string/txt_btn_login"
             android:textSize="24sp" />
 
         <LinearLayout
@@ -86,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
-                android:text="Não possui conta?"
+                android:text="@string/txt_nao_possui_conta"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
@@ -96,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="fazerCadastro"
-                android:text="Cadastrar"
+                android:text="@string/txt_abrir_tela_cadastrar"
                 android:textColor="@color/background1"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -106,7 +106,7 @@
             android:id="@+id/textViewRecuperar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Esqueceu sua senha?"
+            android:text="@string/txt_esqueceu_sua_senha"
             android:textAlignment="center"
             android:textColor="@color/background1"
             android:textSize="16sp"

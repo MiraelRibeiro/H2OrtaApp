@@ -31,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:text="Dados do Pedido"
+                android:text="@string/txt_dados_pedido"
                 android:textAlignment="center"
                 android:textColor="@color/purple_200"
                 android:textSize="25sp"
@@ -48,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Modelo"
+                android:text="@string/txt_modelo"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -86,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:text="Dados de Pagamento"
+                android:text="@string/txt_dado_pagamento"
                 android:textAlignment="center"
                 android:textColor="@color/purple_200"
                 android:textSize="25sp"
@@ -103,7 +103,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/backgorund_opcoes"
-                    android:text="Boleto" />
+                    android:text="@string/txt_rb_boleto" />
 
                 <RadioButton
                     android:id="@+id/radioButtonPix"
@@ -111,7 +111,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/backgorund_opcoes"
-                    android:text="Pix" />
+                    android:text="@string/txt_rb_pix" />
 
                 <RadioButton
                     android:id="@+id/radioButtonCredito"
@@ -119,14 +119,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/backgorund_opcoes"
-                    android:text="Cartão Credito" />
+                    android:text="@string/txt_rb_cartao_credito" />
 
                 <RadioButton
                     android:id="@+id/radioButtonDebito"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/backgorund_opcoes"
-                    android:text="Cartão Débito" />
+                    android:text="@string/txt_rb_cartao_debito" />
             </RadioGroup>
 
             <Button
@@ -134,7 +134,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="Adicionar Cartão"
+                android:text="@string/txt_adicionar_cartao"
                 android:textSize="16sp"
                 android:visibility="invisible" />
 
@@ -143,7 +143,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="Finalizar e Comprar"
+                android:text="@string/txt_btn_finalizar_comprar"
                 android:textSize="16sp" />
 
         </LinearLayout>

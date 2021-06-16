@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "257851876791",
-    "project_id": "h2orta-33e99",
-    "storage_bucket": "h2orta-33e99.appspot.com"
+    "project_number": "529286987964",
+    "project_id": "h2ortaapp",
+    "storage_bucket": "h2ortaapp.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:257851876791:android:3db38b2ac0665418557432",
+        "mobilesdk_app_id": "1:529286987964:android:64554410547e419fad90b9",
         "android_client_info": {
           "package_name": "com.pi.h2orta"
         }
       },
       "oauth_client": [
         {
-          "client_id": "257851876791-iq70sp0ak98ativjg34mnjhka19m7ld7.apps.googleusercontent.com",
+          "client_id": "529286987964-1p4klmqstsbjilh0q7vejb0lacj5lhvm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pi.h2orta",
+            "certificate_hash": "54c034240ff9b6a7934341f7532f5509d0cd07bd"
+          }
+        },
+        {
+          "client_id": "529286987964-qkhson59diffappkb18krbm3u0vuk87b.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAv6I4-mCex49EJsHoCITTZT6ox5FUXHko"
+          "current_key": "AIzaSyB5fT_xGsU8EKZzJVrfx8pjUChkpzHKl3E"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "257851876791-iq70sp0ak98ativjg34mnjhka19m7ld7.apps.googleusercontent.com",
+              "client_id": "529286987964-qkhson59diffappkb18krbm3u0vuk87b.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

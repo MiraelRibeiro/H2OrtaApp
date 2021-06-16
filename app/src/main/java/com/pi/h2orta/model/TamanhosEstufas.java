@@ -5,14 +5,24 @@ public class TamanhosEstufas {
     private String tamanho;
     private String valor;
     private String informacoes;
+    private int imagem;
 
     public TamanhosEstufas() {
     }
 
-    public TamanhosEstufas(String tamanho, String valor, String informacoes) {
+    public TamanhosEstufas(String tamanho, String valor, String informacoes, int imagem) {
         this.tamanho = tamanho;
         this.valor = valor;
         this.informacoes = informacoes;
+        this.imagem = imagem;
+    }
+
+    public int getImagem() {
+        return imagem;
+    }
+
+    public void setImagem(int imagem) {
+        this.imagem = imagem;
     }
 
     public String getTamanho() {

@@ -2,6 +2,7 @@ package com.pi.h2orta.adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.pi.h2orta.R;
 import com.pi.h2orta.activity.PagamentoActivity;
+import com.pi.h2orta.model.CompraEstufa;
+import com.pi.h2orta.model.Estufa;
 import com.pi.h2orta.model.TamanhosEstufas;
 
 import java.util.List;
@@ -24,12 +27,10 @@ public class AdapterEscolha extends RecyclerView.Adapter<AdapterEscolha.MyViewHo
     private Context context;
     private View itemLista;
     private TextView textModelo;
-    private ImageView imagem;
 
-    public AdapterEscolha(List<TamanhosEstufas> listaEstufas, Context context, TextView modelo, ImageView imagem) {
+    public AdapterEscolha(List<TamanhosEstufas> listaEstufas, Context context, TextView modelo) {
         this.listaEstufas = listaEstufas;
         this.context = context;
-        this.imagem = imagem;
         this.textModelo = modelo;
     }
 
@@ -49,11 +50,16 @@ public class AdapterEscolha extends RecyclerView.Adapter<AdapterEscolha.MyViewHo
         holder.btnComprar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                CompraEstufa estufaEscolhida = new CompraEstufa();
+                estufaEscolhida.setDadosEstufa(listaEstufas);
+                estufaEscolhida.setImagem(tamanhosEstufas.getImagem());
+                estufaEscolhida.setModelo(textModelo.getText().toString());
+
                 Intent intent = new Intent(context, PagamentoActivity.class);
                 intent.putExtra("tamanho", tamanhosEstufas.getTamanho());
                 intent.putExtra("valor", tamanhosEstufas.getValor());
                 intent.putExtra("modelo", textModelo.getText());
-                intent.putExtra("imagem", imagem.toString());
+                intent.putExtra("imagem", tamanhosEstufas.getImagem());
                 intent.setFlags(intent.FLAG_ACTIVITY_NEW_TASK);
                 v.getContext().startActivity(intent);
             }
